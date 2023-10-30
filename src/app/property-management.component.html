@@ -1,0 +1,61 @@
+<div
+  class="property-form">
+  <form (submit)="addProperty()" #propertyForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput placeholder="Property Type"
+        id="propertyType"
+        name="type" [(ngModel)]="newProperty.type"
+        required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Property Location"
+             id="propertyLocation"
+             name="location" [(ngModel)]="newProperty.location"
+             required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number"
+             placeholder="Property Price"
+             id="propertyPrice"
+             name="price" [(ngModel)]="newProperty.price"
+             required>
+    </mat-form-field>
+    <button mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="!propertyForm.form.valid">
+      Add Property
+    </button>
+  </form>
+</div>
+
+<div>
+  <h2>
+    Properties
+  </h2>
+  <div
+    class="property-list">
+    <div *ngFor="let property of properties"
+         class="property-item">
+      <div class="property-header">
+        {{ property.type }}
+        <button (click)="deleteProperty(property)"
+                class="delete-button">
+          Delete
+        </button>
+      </div>
+      <div
+        class="property-details">
+        <p>
+          {{ property.location }}
+        </p>
+        <p>
+          Price: {{ property.price | currency: 'USD' }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

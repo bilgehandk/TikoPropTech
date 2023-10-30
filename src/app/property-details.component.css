@@ -1,0 +1,32 @@
+.property-details {
+  padding: 20px;
+}
+
+.property-details mat-card {
+  background-color: #f8f8f8;
+}
+
+.property-details mat-card-title {
+  color: #333;
+  font-size: 24px;
+}
+
+.property-details mat-card-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.property-details mat-card-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.property-details mat-card-actions button:hover {
+  background-color: #0056b3;
+}
+
+.no-property-message {
+  font-size: 18px;
+}

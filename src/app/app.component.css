@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-color: blue;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+}

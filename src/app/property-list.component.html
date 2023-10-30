@@ -1,0 +1,20 @@
+<h2>Property Listings</h2>
+
+<mat-list>
+  <mat-list-item
+    *ngFor="let property of propertyListings"
+    (click)="viewPropertyDetails(property.id)"
+  >
+    <h3>
+      {{ property.type }} - {{ property.location }}
+    </h3>
+    <p>
+      Price: {{ property.price | currency: 'USD' }}
+    </p>
+    <button
+      mat-raised-button color="primary"
+      (click)="viewPropertyDetails(property.id)">
+      View Details
+    </button>
+  </mat-list-item>
+</mat-list>
