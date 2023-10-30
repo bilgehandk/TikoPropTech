@@ -1,4 +1,4 @@
-# Property Tech - Angular Application
+# Tiko Property Tech - Angular Application
 
 ## Table of Contents
 - [Description](#description)
@@ -18,8 +18,8 @@ Before you begin, ensure you have met the following requirements:
 
 ## Getting Started
 To get started, follow these steps:
-1. Clone the repository: `git clone https://github.com/yourusername/property-tech.git`
-2. Change directory: `cd property-tech`
+1. Clone the repository: `git clone https://github.com/bilgehandk/TikoPropTech.git`
+2. Change directory: `cd TikoPropTech`
 3. Install dependencies: `npm install`
 
 ## Usage
