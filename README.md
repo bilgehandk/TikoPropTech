@@ -5,8 +5,6 @@
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 This is an Angular application for Property Tech. It allows users to manage property listings. You can add, edit, and delete properties through the user interface.
